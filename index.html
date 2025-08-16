@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!-- saved from url=(0071)file:///C:/Users/Admin/Desktop/site%20ANMP/andrade_moto_pecas_site.html -->
+<!-- saved from url=(0061)file:///C:/Users/Admin/Downloads/andrade_moto_pecas_site.html -->
 <html lang="pt-BR"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -186,9 +186,8 @@
         }
 
         .contact-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 40px;
+            display: flex;
+            justify-content: center;
         }
 
         .contact-info {
@@ -295,8 +294,7 @@
                 font-size: 1.1rem;
             }
 
-            .services-grid,
-            .contact-grid {
+            .services-grid {
                 grid-template-columns: 1fr;
             }
         }
@@ -414,21 +412,6 @@
                         <a href="https://maps.app.goo.gl/M6phg1yWigq9j2h58" target="_blank" class="whatsapp-btn" style="background: #4285f4;">
                             📍 Ver no Google Maps
                         </a>
-                    </div>
-                </div>
-                <div class="map-container">
-                    <iframe src="./andrade_moto_pecas_site_files/embed.html" width="100%" height="300" style="border:0; border-radius: 15px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
-                    </iframe>
-                    <div style="text-align: center; margin-top: 15px; padding: 15px; background: rgba(255, 193, 7, 0.1); border-radius: 10px; border: 1px solid #FFC107;">
-                        <p style="margin: 0 0 10px 0; color: #FFC107; font-weight: bold;">📍 Localização</p>
-                        <div style="display: flex; gap: 10px; justify-content: center; flex-wrap: wrap;">
-                            <a href="https://maps.app.goo.gl/M6phg1yWigq9j2h58" target="_blank" style="background: #FFC107; color: #000; padding: 8px 15px; text-decoration: none; border-radius: 20px; font-weight: bold; font-size: 0.9rem;">
-                                🗺️ Abrir Google Maps
-                            </a>
-                            <a href="https://share.google/5uVZHyn7aadbPvZpY" target="_blank" style="background: #4285f4; color: white; padding: 8px 15px; text-decoration: none; border-radius: 20px; font-weight: bold; font-size: 0.9rem;">
-                                🏪 Google Meu Negócio
-                            </a>
-                        </div>
                     </div>
                 </div>
             </div>

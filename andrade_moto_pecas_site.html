@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<!-- saved from url=(0071)file:///C:/Users/Admin/Desktop/site%20ANMP/andrade_moto_pecas_site.html -->
+<html lang="pt-BR"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Andrade Moto Peças - Região dos Lagos</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Header */
+        header {
+            background: linear-gradient(135deg, #FFC107 0%, #FFB300 100%);
+            color: #000;
+            padding: 1rem 0;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .header-content {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .logo-icon {
+            width: 60px;
+            height: 60px;
+            background: #000;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #FFC107;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .logo h1 {
+            font-size: 2rem;
+            font-weight: bold;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+
+        .contact-header {
+            text-align: right;
+        }
+
+        .whatsapp-btn {
+            background: #25D366;
+            color: white;
+            padding: 12px 25px;
+            text-decoration: none;
+            border-radius: 25px;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            display: inline-block;
+            margin-top: 10px;
+        }
+
+        .whatsapp-btn:hover {
+            background: #20b85a;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(37, 211, 102, 0.4);
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, #000000 0%, #333333 100%);
+            color: white;
+            padding: 80px 0;
+            text-align: center;
+            position: relative;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 100"><path d="M0,20 Q250,60 500,20 T1000,20 V100 H0 Z" fill="%23FFC107" opacity="0.1"/></svg>') repeat-x bottom;
+        }
+
+        .hero h2 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+
+        .hero p {
+            font-size: 1.3rem;
+            margin-bottom: 30px;
+            opacity: 0.9;
+        }
+
+        .highlight {
+            color: #FFC107;
+            font-weight: bold;
+        }
+
+        /* Services Section */
+        .services {
+            padding: 80px 0;
+            background: #f8f9fa;
+        }
+
+        .services h2 {
+            text-align: center;
+            margin-bottom: 50px;
+            font-size: 2.5rem;
+            color: #333;
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .service-card {
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            text-align: center;
+            transition: all 0.3s ease;
+            border-top: 4px solid #FFC107;
+        }
+
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+        }
+
+        .service-icon {
+            width: 80px;
+            height: 80px;
+            background: linear-gradient(135deg, #FFC107, #FFB300);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 20px;
+            color: #000;
+            font-size: 2rem;
+            font-weight: bold;
+        }
+
+        /* Contact Section */
+        .contact {
+            padding: 80px 0;
+            background: linear-gradient(135deg, #333 0%, #000 100%);
+            color: white;
+        }
+
+        .contact h2 {
+            text-align: center;
+            margin-bottom: 50px;
+            font-size: 2.5rem;
+        }
+
+        .contact-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 40px;
+        }
+
+        .contact-info {
+            background: rgba(255, 193, 7, 0.1);
+            padding: 30px;
+            border-radius: 15px;
+            border: 2px solid #FFC107;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+            gap: 15px;
+        }
+
+        .contact-icon {
+            width: 50px;
+            height: 50px;
+            background: #FFC107;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #000;
+            font-size: 1.2rem;
+            font-weight: bold;
+        }
+
+        .map-container {
+            border-radius: 15px;
+            overflow: hidden;
+            height: 300px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+        }
+
+        .map-container iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+
+        /* Footer */
+        footer {
+            background: #000;
+            color: white;
+            padding: 40px 0;
+            text-align: center;
+        }
+
+        .social-links {
+            margin-top: 20px;
+        }
+
+        .social-links a {
+            display: inline-block;
+            background: #FFC107;
+            color: #000;
+            padding: 12px;
+            margin: 0 10px;
+            border-radius: 50%;
+            text-decoration: none;
+            font-weight: bold;
+            transition: all 0.3s ease;
+        }
+
+        .social-links a:hover {
+            background: #FFB300;
+            transform: scale(1.1);
+        }
+
+        /* Animations */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .fade-in {
+            animation: fadeInUp 0.8s ease-out;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .header-content {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .logo h1 {
+                font-size: 1.5rem;
+            }
+
+            .hero h2 {
+                font-size: 2rem;
+            }
+
+            .hero p {
+                font-size: 1.1rem;
+            }
+
+            .services-grid,
+            .contact-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        /* Custom scrollbar */
+        ::-webkit-scrollbar {
+            width: 10px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: #f1f1f1;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: #FFC107;
+            border-radius: 5px;
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background: #FFB300;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <div class="logo-icon">⚙</div>
+                    <h1>ANDRADE MOTO PEÇAS</h1>
+                </div>
+                <div class="contact-header">
+                    <p style="cursor: pointer;"><strong>📞 (22) 2320-1583</strong></p>
+                    <a href="https://wa.me/552223201583" class="whatsapp-btn" target="_blank">
+                        📱 WhatsApp
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container fade-in">
+            <h2>Peças e Acessórios para <span class="highlight">Motocicletas</span></h2>
+            <p>Atendemos com <span class="highlight">qualidade e confiança</span></p>
+            <p>📍 São Pedro da Aldeia - RJ</p>
+        </div>
+    </section>
+
+    <section class="services">
+        <div class="container">
+            <h2>Nossos Serviços</h2>
+            <div class="services-grid">
+                <div class="service-card fade-in" style="opacity: 1; transform: translateY(0px); transition: 0.6s;">
+                    <div class="service-icon">🏍️</div>
+                    <h3>Peças Originais</h3>
+                    <p>Amplo estoque de peças originais e paralelas para todas as marcas de motocicletas</p>
+                </div>
+                <div class="service-card fade-in" style="opacity: 1; transform: translateY(0px); transition: 0.6s;">
+                    <div class="service-icon">🚚</div>
+                    <h3>Entrega Rápida</h3>
+                    <p>Delivery com agilidade e segurança para o conforto de sua casa</p>
+                </div>
+                <div class="service-card fade-in" style="opacity: 1; transform: translateY(0px); transition: 0.6s;">
+                    <div class="service-icon">🔧</div>
+                    <h3>Assessoria Técnica</h3>
+                    <p>Orientação especializada para escolher a peça ideal para sua moto</p>
+                </div>
+                <div class="service-card fade-in" style="opacity: 1; transform: translateY(0px); transition: 0.6s;">
+                    <div class="service-icon">💳</div>
+                    <h3>Facilidades de Pagamento</h3>
+                    <p>Diversas formas de pagamento para facilitar sua compra</p>
+                </div>
+                <div class="service-card fade-in" style="opacity: 1; transform: translateY(0px); transition: 0.6s;">
+                    <div class="service-icon">💬</div>
+                    <h3>Suporte Online</h3>
+                    <p>Atendimento também por WhatsApp e redes sociais</p>
+                </div>
+                <div class="service-card fade-in" style="opacity: 1; transform: translateY(0px); transition: 0.6s;">
+                    <div class="service-icon">✅</div>
+                    <h3>Garantia de Qualidade</h3>
+                    <p>Produtos selecionados com garantia de procedência</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact">
+        <div class="container">
+            <h2>Entre em Contato</h2>
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">📍</div>
+                        <div>
+                            <h3>Endereço</h3>
+                            <p>RJ 140 KM 05 - Bairro São João<br>São Pedro da Aldeia/RJ</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">📞</div>
+                        <div>
+                            <h3>Telefone/WhatsApp</h3>
+                            <p style="cursor: pointer;">(22) 2320-1583</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">📱</div>
+                        <div>
+                            <h3>Instagram</h3>
+                            <p>@andrademotopecas.oficial</p>
+                        </div>
+                    </div>
+                    <div style="text-align: center; margin-top: 20px;">
+                        <a href="https://maps.app.goo.gl/M6phg1yWigq9j2h58" target="_blank" class="whatsapp-btn" style="background: #4285f4;">
+                            📍 Ver no Google Maps
+                        </a>
+                    </div>
+                </div>
+                <div class="map-container">
+                    <iframe src="./andrade_moto_pecas_site_files/embed.html" width="100%" height="300" style="border:0; border-radius: 15px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                    <div style="text-align: center; margin-top: 15px; padding: 15px; background: rgba(255, 193, 7, 0.1); border-radius: 10px; border: 1px solid #FFC107;">
+                        <p style="margin: 0 0 10px 0; color: #FFC107; font-weight: bold;">📍 Localização</p>
+                        <div style="display: flex; gap: 10px; justify-content: center; flex-wrap: wrap;">
+                            <a href="https://maps.app.goo.gl/M6phg1yWigq9j2h58" target="_blank" style="background: #FFC107; color: #000; padding: 8px 15px; text-decoration: none; border-radius: 20px; font-weight: bold; font-size: 0.9rem;">
+                                🗺️ Abrir Google Maps
+                            </a>
+                            <a href="https://share.google/5uVZHyn7aadbPvZpY" target="_blank" style="background: #4285f4; color: white; padding: 8px 15px; text-decoration: none; border-radius: 20px; font-weight: bold; font-size: 0.9rem;">
+                                🏪 Google Meu Negócio
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>© 2024 Andrade Moto Peças. Todos os direitos reservados.</p>
+            <div class="social-links">
+                <a href="https://wa.me/552223201583" target="_blank">WhatsApp</a>
+                <a href="https://instagram.com/andrademotopecas.oficial" target="_blank">Instagram</a>
+                <a href="https://share.google/5uVZHyn7aadbPvZpY" target="_blank">Google</a>
+            </div>
+            <p style="margin-top: 20px; opacity: 0.8;">
+                🏍️ Sua moto em boas mãos! 🏍️
+            </p>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Add animation on scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.service-card').forEach(card => {
+            card.style.opacity = '0';
+            card.style.transform = 'translateY(30px)';
+            card.style.transition = 'all 0.6s ease';
+            observer.observe(card);
+        });
+
+        // Phone number click to call
+        document.addEventListener('DOMContentLoaded', function() {
+            const allParagraphs = document.querySelectorAll('p');
+            allParagraphs.forEach(p => {
+                if (p.textContent.includes('(22) 2320-1583')) {
+                    p.style.cursor = 'pointer';
+                    p.addEventListener('click', function() {
+                        window.open('tel:+552223201583');
+                    });
+                }
+            });
+        });
+    </script>
+
+</body></html>
